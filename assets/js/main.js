@@ -1,7 +1,7 @@
 "use strict";
 
 //Modify zoom for better visuals
-document.body.style.zoom="90%";
+document.body.style.zoom="67%";
 
 //Enable tooltips everywhere
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
