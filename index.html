@@ -1,230 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Jonathan Sun's Portfolio Website</title>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jonathan Sun's Portfolio Website">
-    <meta name="author" content="Jonathan Sun">    
-    
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
-    
-    <!-- FontAwesome JS -->
-    <script defer src="assets/fontawesome/js/all.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">  
-    
-    <!-- github calendar css -->
-    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar-responsive.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="http://example.com/favicon.png">
+  <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
+  <!-- BEGIN PART 1 -->
+  <link rel="stylesheet" href="styles.css">
+  <title>Jonathan Sun</title>
+  <!-- END PART 1 -->
+</head>
 
-    <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-    
-</head> 
+<body class="light" id="top">
+  <header class="header center">
+    <!-- BEGIN PART 2 -->
+    <h3>
+      <a class="link" href="/">JS</a>
+    </h3>
+    <!-- END PART 2 -->
+    <nav class="nav center">
+      <ul class="nav__list center">
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#projects">Projects</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#skills">Skills</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#contact">Contact</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="https://www.google.com/">résumé</a>
+        </li>
+      </ul>
 
-<body>
-    <!-- ******HEADER****** --> 
-    <header class="header">
-        <div class="container">     
-	        <div class="row align-items-center">
-			    <div class="col">         
-		            <img class="profile-image img-fluid float-start rounded-circle" src="assets/images/profile.jpg" alt="profile image" />
-		            <div class="profile-content">
-		                <h1 class="name">Jonathan Sun</h1>
-		                <h2 class="desc">Second Year Student at UC Berkeley</h2>   
-		                <ul class="social list-inline">
-		                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/jonathan-sun63/"><i class="fab fa-linkedin-in"></i></a></li>
-		                    <li class="list-inline-item"><a href="https://github.com/j0nnn"><i class="fab fa-github-alt"></i></a></li> 
-                            <li class="list-inline-item last-item"><a href="mailto:jsun63@berkeley.edu"><i class="fas fa-at"></i></a></li>                   
-		                </ul> 
-		            </div><!--//profile-->
-                </div><!--//col-->
-	        </div><!--//row-->         
-        </div><!--//container-->
-    </header><!--//header-->
-    
-    <div class="container sections-wrapper py-5">
-        <div class="row">
-            <div class="primary col-lg-8 col-12">
-                <section class="about section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">About Me</h2>
-                        <div class="content">
-                            <p>Hello! I'm a second year studying Electrical Engineering and Computer Science at UC Berkeley.
-                                Currently looking for software engineer intern positions for 2022 and am interested
-                                full stack development. Outside of school, I love teaching and volunteering in my local community.
-                                I am also an avid longboarder and loves to play pick-up Ultimate Frisbee!
-                            </p>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
-    
-               <section class="latest section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Personal Projects</h2>
-                        <div class="content">    
-                                               
-                            <div class="item featured text-center">
-                                
-                                <div class="featured-image has-ribbon">
-                                    <a href="https://tasa.berkeley.edu/" target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-featured.png" alt="project name" />
-                                    </a>
-                                    <div class="ribbon">
-                                        <div class="text">New</div>
-                                    </div>
-                                </div>
-                                
-                                <h3 class="title mb-3">Taiwanese American Student Association - Venmo-Spreadsheet Integration</a></h3>
-                                    
-                                <div class="desc">                                    
-                                    <p>A web portal that employs Venmo's RESTful API to collect transactional information. Utilizes Google Cloud Platform to access Google Sheets API, allowing the program to sort through the transactions based on specific parameters. Then, inputting them all onto the spreadsheet for further manual calculations. Constructed the front-end using Django for customizable search parameters.</p>
-                                </div><!--//desc-->         
-                                <a class="more-link" href="https://github.com/j0nnn/Venmo-Integration" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a>           
-                            </div><!--//item-->
-                            <hr class="divider" />
-                            <div class="item row">
-                                <a class="col-md-4 col-12">
-                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-1.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title">CollegeGo - A WebApp for College Counselors</a></h3>
-                                    <p class="mb-2">A web app for college counselors that allow the manipulation large quantities of student documents using both React.js and Node.js. Granted college counselors a better interface on tracking individual students’ progress on application and/or missing documents. Utilize Common App API to compile statistics of all students applications in various subcategories; saving 100+ hours of manual work for college counselors.</p>
-                                    <p><a class="more-link" href="https://github.com/j0nnn/CollegeGo" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
-                            
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="https://nthu-en.site.nthu.edu.tw/  " target="_blank">
-                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-2.png" alt="project name"/>
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title">License Plate Recognition Software</a></h3>
-                                    <p class="mb-2">Researched and developed image recognition software geared towards license plate detection at Tsinghua University, Taiwan. Implemented TensorFlow and Keras as the skeleton code for machine learning. Utilized CNN dataset on number plates to train algorithms to identify plate text with high accuracy. Designed Keras layers to cope with reflection and other natural disturbances in unideal situations.</p>
-                                    <p><a class="more-link" href="https://github.com/j0nnn/License-Plate-Recogition" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->                    
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                
-                </section><!--//section-->
-            
-            </div><!--//primary-->
-            <div class="secondary col-lg-4 col-12">
-                 <aside class="info aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading sr-only">Basic Information</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Berkeley, CA</li>
-                                <li><i class="fas fa-file"></i><span class="sr-only">Email:</span><a href="https://drive.google.com/file/d/1k3mkbKatKQlMfiKG3tVTyrCzJuwId2sF/view?usp=sharing">Résumé/CV</a></li>
-                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="#">www.jonathansun.net</a></li>
-                            </ul>
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </aside><!--//aside-->
-                
-                <aside class="skills aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Skills</h2>
-                        <div class="content">
-                            <p class="intro">
-                                I've polished my skills mostly through academics and personal projects. The programming languages that I am most familiar with are high-level ones; however, I do have working knowledge on  C and RISC-V.</p>
-                            
-                            <div class="skillset">
-                               
-                                <div class="item">
-                                    <h3 class="level-title">Python &amp; Django<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="TensorFlow and OpenCV for ML/AI, NumPy and Pandas for data management, Django for front-end framework. I have also utilized Django in my Venmo Integration project."><i class="fas fa-info-circle"></i>Expert</span></h3>
+      <!-- BEGIN PART 5 -->
 
-                                    <div class="level-bar progress">
-									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 96%" aria-valuenow="96"  aria-valuemin="0" aria-valuemax="96"></div>
-									</div><!--//level-bar-->                               
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">Javascript &amp; REACT<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="Working knowledge of REACT from experience in Counselor project. Had some exposure to Node.js while working alonside the development team."><i class="fas fa-info-circle"></i>Pro</span></h3>
-                                    <div class="level-bar progress">
-									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 85%" aria-valuenow="94"  aria-valuemin="0" aria-valuemax="94"></div>
-									</div><!--//level-bar-->                                   
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">Java<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="Learned the various implementations of data strctures through Java. Fluent in its syntax and data structures libraries."><i class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar progress">
-									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 95%" aria-valuenow="93"  aria-valuemin="0" aria-valuemax="96"></div>
-									</div><!--//level-bar-->                                  
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">Data Structures &amp; Algorithms<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title="Extensive knowledge of the implementation of data strcutures and their applications. Able to identify efficient algorithms for problems concering large datasets or specific reductions."><i class="fas fa-info-circle"></i>Pro</span></h3>
-                                    <div class="level-bar progress">
-									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 85%" aria-valuenow="86"  aria-valuemin="0" aria-valuemax="96"></div>
-									</div><!--//level-bar-->                                  
-                                </div><!--//item-->
-                                
-                                <p><a class="more-link" href="https://github.com/j0nnn"><i class="fas fa-external-link-alt"></i>More on GitHub</a></p> 
-                            </div>              
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </aside><!--//section-->
-                
-                <aside class="education aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Education</h2>
-                        <div class="content">
-                            <div class="item">                      
-                                <h4 class="title"><i class="fas fa-graduation-cap"></i> BS Electrical Engineering & Computer Science</h4>
-                                <h5 class="university">University of California, Berkeley <span class="year">(2020-2023)</span></h5>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                            
-                <aside class="languages aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Languages</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li class="item">
-                                    <span class="title"><strong>English:</strong></span>
-                                    <span class="level">Native Speaker <br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
-                                </li><!--//item-->
-                                <li class="item">
-                                    <span class="title"><strong>Mandarin:</strong></span>
-                                    <span class="level">Native Speaker <br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"> </i><i class="fas fa-star"></i></span>
-                                </li><!--//item-->
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                
-                <aside class="credits aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Credits</h2>
-                        <div class="content">
-                            <ul class="list-unstyled pb-2">
-                                <li><a href="https://getbootstrap.com/" target="_blank"><i class="fas fa-external-link-alt"></i>Bootstrap</a></li>
-                                <li><a href="https://fortawesome.github.io/Font-Awesome/" target="_blank"><i class="fas fa-external-link-alt"></i>FontAwesome</a></li>
-                                <li><a href="https://github.com/sdepold/vanilla-rss" target="_blank"><i class="fas fa-external-link-alt"></i>Vanilla RSS</a></li>
-                            </ul>  
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-              
-            </div><!--//secondary-->    
-        </div><!--//row-->
-    </div><!--//masonry-->
- 
-    <!-- Javascript -->          
-    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
-    <script type="text/javascript" src="assets/plugins/vanilla-rss/dist/rss.global.min.js"></script> 
-    <script type="text/javascript" src="assets/plugins/dark-mode-switch/dark-mode-switch.min.js"></script> 
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>            
+      <button type="button" aria-label="toggle theme" class="btn btn--icon">
+        <i id="btn-theme" class="fas fa-moon"></i>
+      </button>
+
+      <!-- 
+        5.1: What does this button tag correspond to on the site? 
+        It corresponds to the Dark Mode button
+      -->
+
+      <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- 
+        5.2: Try Ctrl-F in styles.css and look the class 'nav__hamburger'. You'll notice that it
+        appears in 2 places. Why is one of the rules 'display: none' on one instance? How do you
+        make it so that this button appears on screen? 
+        Hint: remember what @media (max-width: 600px) means.
+        It will display if someone is displaying this website on a phone or a smaller window tab
+       -->
+      <!-- END PART 5 -->
+    </nav>
+  </header>
+
+  <main>
+    <div class="about center">
+      <!-- BEGIN PART 6 -->
+      <h1>Hi, I'm <span class="about__name">Jonathan</span></h1>
+      <h2><span class="about__role">EECS student @ UC Berkeley</span></h2>
+      <p><span class="about__desc">An aspiring software engineer based in the Bay, looking for any opportunities<br>
+        to expand my knowledge base while fostering a collaborative community!</span></p>
+      <!-- END PART 6 -->
+      <div class="about__contact left">
+        <a href="https://github.com/j0nnn" aria-label="github" class="link link--icon">
+          <i aria-hidden="true" class="fab fa-github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/jonathan-sun63/" aria-label="linkedin" class="link link--icon">
+          <i aria-hidden="true" class="fab fa-linkedin"></i>
+        </a>  
+      </div>
+    </div>
+    <section id="projects" class="section projects">
+      <h2 class="section__title">Projects</h2>
+      <div class="projects__grid">
+        <!-- BEGIN PART 8 -->
+        <div class="project">
+          <h3>Venmo-Spreadsheet Integration</h3>
+          <p class="project__description">
+            Develop a web portal for transfering, querying, and analyzing Venmo user data in specified timeframes, 
+            employing Venmo and Google Sheets' API for transactional data.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Python</li>
+            <li class="project__stack-item">Django</li>
+            <li class="project__stack-item">HTML</li>
+          </ul>
+
+          <a href="https://github.com/j0nnn/Venmo-Integration" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <a href="https://tasa.berkeley.edu/" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+        <div class="project">
+          <h3>ML Licence Plate Detection</h3>
+          <p class="project__description">
+            Researched and developed image recognition software geared towards license plate detection. 
+            Implemented TensorFlow and Keras as the skeleton code for machine learning.
+
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Python</li>
+          </ul>
+
+          <a href="https://github.com/j0nnn/License-Plate-Recogition" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <a href="https://nthu-en.site.nthu.edu.tw/" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+        <div class="project">
+          <h3>Gitlet Version Control System</h3>
+          <p class="project__description">
+            A version-control system that mimics some of the basic features of the popular system Git.
+            Supports functionalities such as add, remove, commit, checkout, branch, merge, etc.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Java</li>
+          </ul>
+
+          <a href="https://github.com/j0nnn/gitlet" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <a href="https://sp21.datastructur.es/materials/proj/proj2/proj2" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+        <!-- END PART 8 -->
+      </div>
+    </section>
+
+
+    <section class="section skills" id="skills">
+      <!-- BEGIN PART 10 -->
+      <h2 class="section__title">Skills</h2>
+      <ul class="skills__list">
+        <li class="skills__list-item btn btn--plain"> Python</li>
+        <li class="skills__list-item btn btn--plain"> JavaScript</li>
+        <li class="skills__list-item btn btn--plain"> Java</li>
+        <li class="skills__list-item btn btn--plain"> C++</li>
+        <li class="skills__list-item btn btn--plain"> C</li>
+        <li class="skills__list-item btn btn--plain"> Data Structure and Algorithms</li>
+        <li class="skills__list-item btn btn--plain"> Django</li>
+        <li class="skills__list-item btn btn--plain"> REACT</li>
+        <li class="skills__list-item btn btn--plain"> HTML/CSS</li>
+        <li class="skills__list-item btn btn--plain"> SQL</li>
+        <li class="skills__list-item btn btn--plain"> Matlab</li>
+        <li class="skills__list-item btn btn--plain"> Git</li>
+      </ul>
+      <!-- END PART 10 -->
+    </section>
+    <section class="section contact center" id="contact">
+      <h2 class="section__title">Contact</h2>
+      <a href="mailto:jsun63@berkeley.edu">
+        <span class="btn btn--outline">email me!</span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <!-- BEGIN PART 12 -->
+    <a href="https://www.linkedin.com/in/jonathan-sun63/" class="link footer__link">
+      Created By Jonathan Sun
+    </a>
+    <!-- END PART 12 -->
+  </footer>
+
+
+  <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+  </div>
+  <script src="./script.js"></script>
 </body>
-</html> 
 
+</html>
