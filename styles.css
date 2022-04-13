@@ -102,6 +102,23 @@ button {
   buttons and links
 ===================*/
 
+.extraLink {
+  color: var(--clr-fg);
+  padding: 0 0 0.3em 0;
+  position: relative;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 20px;
+  display: inline-block;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.extraLink:hover {
+  color: var(--clr-primary);
+}
+
 .link {
   color: var(--clr-primary);
   padding: 0 0 0.3em 0;
@@ -286,6 +303,8 @@ main {
 .about__desc {
   font-size: 0.9rem;
   max-width: 600px;
+  margin-top: 1em;
+  display: inline-block;
 }
 
 .about__contact {
@@ -318,6 +337,9 @@ main {
   text-align: center;
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .project:hover {
@@ -355,16 +377,30 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: flex-end;
 }
 
 .skills__list-item {
-  margin: 2px;
+  font-size: large;
+  margin: 6px;
 }
 
 /* END PART 11 */
 
 .contact {
   flex-direction: column;
+}
+
+.extraContactContainer {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+}
+
+.extraContact {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
 }
 
 .footer {
@@ -377,6 +413,8 @@ main {
   font-size: 0.9rem;
   font-weight: 700;
   color: var(--clr-fg);
+  margin-bottom: 6px;
+  display: inline-block;
 }
 
 .scroll-top {
