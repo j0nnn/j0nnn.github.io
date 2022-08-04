@@ -129,7 +129,9 @@ button {
   color: var(--clr-primary);
 }
 
-/* BEGIN PART 4 */
+.none {
+  opacity: 0%;
+}
 
 .link::before {
   content: "";
@@ -146,8 +148,6 @@ button {
 .link:focus::before {
   width: 100%;
 }
-
-/* END PART 4 */
 
 .link--nav {
   color: var(--clr-fg);
@@ -311,23 +311,38 @@ main {
 .intro {
   display: flex;
   flex-direction: row;
-  min-height: 430px;
+  min-height: 440px;
 }
 
 .headshot {
   width: 330px;
   height: 330px;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-left: 90px;
   border-radius: 50%;
-  box-shadow: 0px 0px 2px 4px #D3D3D3;
+  box-shadow: 0px 0px 2px 5px #D3D3D3;
+}
+
+.about__labels {
+  animation: fadeInLeft 1.2s linear;
+}
+
+@keyframes fadeInLeft {
+  0% { 
+    transform: translateX(-10%);
+    opacity: 0%; 		
+  }
+  100% { 
+    transform: translateX(0%); 
+    opacity: 100%;
+  }
 }
 
 .projects__grid {
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, calc(100% / 3 - 30px * 2 / 3));
+  grid-template-rows: repeat(auto-fit, calc(100% / 3 - 30px * 2 / 3));
   grid-gap: 30px;
 }
 

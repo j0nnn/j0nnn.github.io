@@ -61,3 +61,21 @@ const scrollUp = () => {
 }
 
 document.addEventListener('scroll', scrollUp)
+
+window.onload = function () {
+	type("Hi, I'm ", 0, 'typewriter', 80, type, 'Jonathan', 0, 'typewritername', 220, fadeIn);
+}
+function type(word, i, elementId, delay, callback, ...args) {
+	if (i < word.length) {
+		document.getElementById(elementId).innerHTML = word.substring(0, i + 1) + document.getElementById(elementId).innerHTML.substring(i);
+		i++;
+		setTimeout(type, Math.floor(Math.random() * 50 + delay - 25), word, i, elementId, delay, callback, ...args);
+	} else if (callback) {
+		callback(...args);
+	}
+}
+
+function fadeIn()
+ {
+	document.getElementById('fadeInDesc').className = 'about__labels';
+ }
