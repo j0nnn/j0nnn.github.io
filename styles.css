@@ -215,7 +215,7 @@ button {
 
 .btn--icon {
   padding: 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .btn--icon:hover,
@@ -226,12 +226,6 @@ button {
 .btn--icon:active {
   transform: translateY(-5px);
 }
-
-/*========
-  layout
-========*/
-
-/* BEGIN PART 3 */
 
 .center {
   display: flex;
@@ -249,11 +243,9 @@ button {
   justify-content: space-between;
 }
 
-/* END PART 3 */
-
 main {
   max-width: 1100px;
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -268,7 +260,6 @@ main {
 }
 
 .nav__list {
-  margin-right: 1.5em;
   display: flex;
 }
 
@@ -281,15 +272,13 @@ main {
   width: 1em;
 }
 
-/* BEGIN PART 7 */
-
 .about {
   display: flex;
   flex-direction: column;
-  margin-top: 170px;
+  margin-top: 70px;
+  margin-bottom: 55px;
+  width: 55%;
 }
-
-/* END PART 7 */
 
 .about__name {
   color: var(--clr-primary);
@@ -319,7 +308,20 @@ main {
   margin-right: 1em;
 }
 
-/* BEGIN PART 9 */
+.intro {
+  display: flex;
+  flex-direction: row;
+  min-height: 430px;
+}
+
+.headshot {
+  width: 330px;
+  height: 330px;
+  margin-top: 10px;
+  margin-left: 90px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px 4px #D3D3D3;
+}
 
 .projects__grid {
   max-width: 1100px;
@@ -328,8 +330,6 @@ main {
   grid-template-columns: repeat(auto-fit, calc(100% / 3 - 30px * 2 / 3));
   grid-gap: 30px;
 }
-
-/* END PART 9 */
 
 .project {
   padding: 2em;
@@ -368,8 +368,6 @@ main {
   margin-left: 0.5em;
 }
 
-/* BEGIN PART 11 */
-
 .skills__list {
   max-width: 800px;
   width: 95%;
@@ -384,8 +382,6 @@ main {
   font-size: large;
   margin: 6px;
 }
-
-/* END PART 11 */
 
 .contact {
   flex-direction: column;
@@ -412,7 +408,6 @@ main {
 .footer__link {
   font-size: 0.9rem;
   font-weight: 700;
-  color: var(--clr-fg);
   margin-bottom: 6px;
   display: inline-block;
 }
@@ -425,54 +420,4 @@ main {
   background-color: transparent;
   font-size: 1.8rem;
   transition: transform 0.2s ease-in-out;
-}
-
-@media (max-width: 600px) {
-  .header {
-    height: 6em;
-  }
-
-  .section {
-    margin-top: 4em;
-  }
-
-  .nav__list {
-    flex-direction: column;
-    padding: 4em 0;
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 5em;
-    background-color: var(--clr-bg);
-    width: 0;
-    overflow: hidden;
-    transition: width 0.2s ease-in-out;
-  }
-
-  .display-nav-list {
-    width: 100%;
-  }
-
-  .nav__list-item {
-    margin: 0.5em 0;
-  }
-
-  .nav__hamburger {
-    display: flex;
-    margin-left: 0.8em;
-  }
-
-  .about {
-    align-items: flex-start;
-    margin-top: 2em;
-  }
-
-  .footer {
-    padding: 2em;
-    margin-top: 3em;
-  }
-
-  .scroll-container {
-    display: none;
-  }
 }

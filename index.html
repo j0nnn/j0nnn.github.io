@@ -10,19 +10,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="icon" href="http://example.com/favicon.png">
   <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
-  <!-- BEGIN PART 1 -->
   <link rel="stylesheet" href="styles.css">
   <title>Jonathan Sun</title>
-  <!-- END PART 1 -->
 </head>
 
 <body class="light" id="top">
   <header class="header center">
-    <!-- BEGIN PART 2 -->
     <h3>
       <a class="link" href="/">JS</a>
     </h3>
-    <!-- END PART 2 -->
     <nav class="nav center">
       <ul class="nav__list center">
         <li class="nav__list-item">
@@ -37,56 +33,40 @@
         <li class="nav__list-item">
           <a class="link link--nav" href="https://drive.google.com/file/d/1mdrzoCSN_LrTZsGFwJBJEgMsRATyhB7F/view?usp=sharing">résumé</a>
         </li>
+        <li class="nav__list-item">
+          <button type="button" aria-label="toggle theme" class="btn btn--icon">
+            <i id="btn-theme" class="fas fa-moon"></i>
+          </button>
+        </li>
       </ul>
-
-      <!-- BEGIN PART 5 -->
-
-      <button type="button" aria-label="toggle theme" class="btn btn--icon">
-        <i id="btn-theme" class="fas fa-moon"></i>
-      </button>
-
-      <!-- 
-        5.1: What does this button tag correspond to on the site? 
-        It corresponds to the Dark Mode button
-      -->
-
       <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
         <i class="fas fa-bars"></i>
       </button>
-
-      <!-- 
-        5.2: Try Ctrl-F in styles.css and look the class 'nav__hamburger'. You'll notice that it
-        appears in 2 places. Why is one of the rules 'display: none' on one instance? How do you
-        make it so that this button appears on screen? 
-        Hint: remember what @media (max-width: 600px) means.
-        It will display if someone is displaying this website on a phone or a smaller window tab
-       -->
-      <!-- END PART 5 -->
     </nav>
   </header>
 
   <main>
-    <div class="about center">
-      <!-- BEGIN PART 6 -->
-      <h1>Hi, I'm <span class="about__name">Jonathan</span></h1>
-      <h2><span class="about__role">EECS student @ UC Berkeley</span></h2>
-      <p><span class="about__desc">An aspiring software engineer based in the Bay, looking for any opportunities<br>
-        to expand my knowledge base while fostering a collaborative community!</span></p>
-      <!-- END PART 6 -->
-      <div class="about__contact left">
-        <a href="https://github.com/j0nnn" aria-label="github" class="link link--icon">
-          <i aria-hidden="true" class="fab fa-github"></i>
-        </a>
-
-        <a href="https://www.linkedin.com/in/jonathan-sun63/" aria-label="linkedin" class="link link--icon">
-          <i aria-hidden="true" class="fab fa-linkedin"></i>
-        </a>  
+    <div class="intro">
+      <div class="about center">
+        <h1>Hi, I'm <span class="about__name">Jonathan</span></h1>
+        <h2><span class="about__role">EECS student @ UC Berkeley</span></h2>
+        <p><span class="about__desc">An aspiring software engineer based in the Bay, looking for opportunities<br>
+          to expand my knowledge base while fostering a collaborative community!</span></p>
+        <div class="about__contact left">
+          <a href="https://github.com/j0nnn" aria-label="github" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+  
+          <a href="https://www.linkedin.com/in/jonathan-sun63/" aria-label="linkedin" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>  
+        </div>
       </div>
+      <img class="headshot" src="images/jonathan.jpg"/>
     </div>
     <section id="projects" class="section projects">
-      <h2 class="section__title">Projects</h2>
+      <h2 class="section__title">Work Experience</h2>
       <div class="projects__grid">
-        <!-- BEGIN PART 8 -->
         <div class="project">
           <h3>Venmo-Spreadsheet Integration</h3>
           <p class="project__description">
@@ -143,53 +123,14 @@
             </a>
           </div>
         </div>
-        <!-- END PART 8 -->
       </div>
-    </section>
-
-
-    <section class="section skills" id="skills">
-      <!-- BEGIN PART 10 -->
-      <h2 class="section__title">Skills</h2>
-      <ul class="skills__list">
-        <li class="skills__list-item btn btn--plain"> Python</li>
-        <li class="skills__list-item btn btn--plain"> JavaScript</li>
-        <li class="skills__list-item btn btn--plain"> Java</li>
-        <li class="skills__list-item btn btn--plain"> C</li>
-        <li class="skills__list-item btn btn--plain"> Data Structure</li>
-        <li class="skills__list-item btn btn--plain"> Algorithms</li>
-        <li class="skills__list-item btn btn--plain"> REACT</li>
-        <li class="skills__list-item btn btn--plain"> Django</li>
-        <li class="skills__list-item btn btn--plain"> HTML/CSS</li>
-        <li class="skills__list-item btn btn--plain"> SQL</li>
-        <li class="skills__list-item btn btn--plain"> Git</li>
-      </ul>
-      <!-- END PART 10 -->
-    </section>
-    <section class="section contact center" id="contact">
-      <h2 class="section__title">Contact</h2>
-      <div class="extraContactContainer">
-        <div class="extraContact">
-          <a class="extraLink">
-            <i aria-hidden="true" class="fa fa-envelope"></i>
-            <p style="margin-top: 10px;">jsun63@berkeley.edu</p>
-          </a>
-        </div>
-          <a class="extraLink">
-            <i aria-hidden="true" class="fa fa-phone"></i>
-            <p style="margin-top: 10px;">+1-(510)-213-5365</p>
-          </a>
-      </div>
-      
     </section>
   </main>
 
   <footer class="footer">
-    <!-- BEGIN PART 12 -->
-    <a href="https://www.linkedin.com/in/jonathan-sun63/" class="link footer__link">
+    <a class="footer__link">
       Created By Jonathan Sun
     </a>
-    <!-- END PART 12 -->
   </footer>
 
 
