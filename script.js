@@ -63,7 +63,7 @@ const scrollUp = () => {
 document.addEventListener('scroll', scrollUp)
 
 window.onload = function () {
-	type("Hi, I'm ", 0, 'typewriter', 80, type, 'Jonathan', 0, 'typewritername', 220, fadeIn);
+	type("Hi, I'm ", 0, 'typewriter', 80, fadeIn, type, 'Jonathan', 0, 'typewritername', 220);
 }
 function type(word, i, elementId, delay, callback, ...args) {
 	if (i < word.length) {
@@ -75,7 +75,8 @@ function type(word, i, elementId, delay, callback, ...args) {
 	}
 }
 
-function fadeIn()
+function fadeIn(callback, ...args)
  {
 	document.getElementById('fadeInDesc').className = 'about__labels';
+	callback(...args);
  }

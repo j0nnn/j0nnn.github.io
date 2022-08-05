@@ -155,7 +155,13 @@ button {
   font-weight: 500;
 }
 
-.link--icon {
+.link--icon::before {
+  background-color: var(--clr-primary);
+  font-size: 1.2rem;
+}
+
+.link--icon:hover::before,
+.link:focus::before {
   color: var(--clr-fg);
   font-size: 1.2rem;
 }
@@ -282,7 +288,6 @@ main {
 .about {
   display: flex;
   flex-direction: column;
-  margin-top: 70px;
   margin-bottom: 55px;
   width: 55%;
 }
@@ -318,7 +323,7 @@ main {
 .intro {
   display: flex;
   flex-direction: row;
-  min-height: 440px;
+  min-height: 80vh;
 }
 
 .headshot {
@@ -331,12 +336,12 @@ main {
 }
 
 .about__labels {
-  animation: fadeInLeft 1.2s linear;
+  animation: fadeInLeft 1.2s linear forwards;
 }
 
 @keyframes fadeInLeft {
   0% { 
-    transform: translateX(-10%);
+    transform: translateX(-7%);
     opacity: 0%; 		
   }
   100% { 
