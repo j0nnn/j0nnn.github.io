@@ -31,12 +31,13 @@ body {
   --clr-bg-alt: #fff;
   --clr-fg: #555;
   --clr-fg-alt: #444;
+  --clr-hovered-link: #262626;
   --clr-primary: #2978b5;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .dark {
-  --clr-bg: #23283e;
+  --clr-bg: #23283e;  
   --clr-bg-alt: #2a2f4c;
   --clr-fg: #bdbddd;
   --clr-fg-alt: #cdcdff;
@@ -120,13 +121,12 @@ button {
 }
 
 .link {
-  color: var(--clr-primary);
   padding: 0 0 0.3em 0;
   position: relative;
 }
 
 .link:hover {
-  color: var(--clr-primary);
+  color: var(--clr-hovered-link);
 }
 
 .none {
@@ -140,8 +140,8 @@ button {
   height: 0.2em;
   position: absolute;
   bottom: 0;
-  background-color: var(--clr-primary);
-  transition: width 0.2s ease-in;
+  background-color: var(--clr-fg-alt);
+  transition: width 0.3s ease-in;
 }
 
 .link:hover::before,
@@ -172,7 +172,6 @@ button {
   font-weight: 500;
   font-size: 0.9rem;
   text-transform: lowercase;
-  transition: transform 0.2s ease-in-out;
 }
 
 .btn--outline {
@@ -226,7 +225,7 @@ button {
 
 .btn--icon:hover,
 .btn--icon:focus {
-  color: var(--clr-primary);
+  color: var(--clr-hovered-link);
 }
 
 .btn--icon:active {
