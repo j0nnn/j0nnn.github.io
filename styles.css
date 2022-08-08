@@ -32,6 +32,7 @@ body {
   --clr-fg: #555;
   --clr-fg-alt: #444;
   --clr-hovered-link: #262626;
+  --clr-project-stack: rgb(150, 150, 150);
   --clr-primary: #2978b5;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -356,45 +357,91 @@ main {
   }
 }
 
-.projects__grid {
+.experience__grid {
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
-  grid-template-rows: repeat(auto-fit, calc(100% / 3 - 30px * 2 / 3));
   grid-gap: 30px;
 }
 
-.project {
-  padding: 2em;
+.experience {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience__card {
+  padding: 10px;
   margin: 0 auto;
   text-align: center;
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
+  height: fit-content;
+  min-width: 100%;
+  border-radius: 10px;
 }
 
-.project:hover {
+.experience__card:hover {
   transform: translateY(-7px);
 }
 
-.project__description {
-  margin-top: 1em;
+.experience__image__container {
+  min-width: 170px;
+  overflow: none;
 }
 
-.project__stack {
+.experience__title {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 1.2em 0;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%
 }
 
-.project__stack-item {
-  margin: 0.5em;
-  font-weight: 500;
-  font-size: 0.8rem;
-  color: var(--clr-fg-alt);
+.experience__company__name {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.experience__company__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 5px;
+  padding-right: 25px;
+  width: 100%
+}
+
+.experience__date {
+  font-size: 11px;
+  color: var(--clr-project-stack);
+}
+
+.experience__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 1%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  overflow-x: none;
+}
+
+.experience__description {
+  text-align: left;
+  font-size: 12px;
+}
+
+.experience__stack {
+  padding-top: 15px;
+  text-align: left;
+  font-size: 11px;
+  color: var(--clr-project-stack);
 }
 
 .project .link--icon {

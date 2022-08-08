@@ -25,7 +25,8 @@
           <a class="link link--nav" href="#project">projects</a>
         </li>
         <li class="nav__list-item">
-          <a class="link link--nav" href="https://drive.google.com/file/d/1mdrzoCSN_LrTZsGFwJBJEgMsRATyhB7F/view?usp=sharing">résumé</a>
+          <a class="link link--nav"
+            href="https://drive.google.com/file/d/1mdrzoCSN_LrTZsGFwJBJEgMsRATyhB7F/view?usp=sharing">résumé</a>
         </li>
         <li class="nav__list-item">
           <button type="button" aria-label="toggle theme" class="btn btn--icon">
@@ -43,84 +44,114 @@
     <div class="intro">
       <div class="about center">
         <h1 id="typewriter"><span id="typewritername" class="about__name"><span></h1>
-          <div class="none" id="fadeInDesc">
-            <h2><span class="about__role">EECS student @ UC Berkeley</span></h2>
-        <p><span class="about__desc">An aspiring software engineer based in the Bay, looking for opportunities<br>
-          to expand my knowledge base while fostering a collaborative community!</span></p>
-        <div class="about__contact left">
-          <a href="https://github.com/j0nnn" aria-label="github" class="btn--icon link--icon">
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/jonathan-sun63/" aria-label="linkedin" class="btn--icon link--icon">
-            <i aria-hidden="true" class="fab fa-linkedin"></i>
-          </a>  
+        <div class="none" id="fadeInDesc">
+          <h2><span class="about__role">EECS student @ UC Berkeley</span></h2>
+          <p><span class="about__desc">An aspiring software engineer based in the Bay, looking for opportunities<br>
+              to expand my knowledge base while fostering a collaborative community!</span></p>
+          <div class="about__contact left">
+            <a href="https://github.com/j0nnn" aria-label="github" class="btn--icon link--icon">
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jonathan-sun63/" aria-label="linkedin" class="btn--icon link--icon">
+              <i aria-hidden="true" class="fab fa-linkedin"></i>
+            </a>
           </div>
         </div>
       </div>
       <div class="imagecontainer">
-        <img class="headshot" src="images/jonathan.jpg"/>
+        <img class="headshot" src="images/jonathan.jpg" />
       </div>
     </div>
-    <section id="work" class="section projects">
+    <section id="work" class="section experience">
       <h2 class="section__title">Work Experience</h2>
-      <div class="projects__grid">
-        <div class="project">
-          <h3>Venmo-Spreadsheet Integration</h3>
-          <p class="project__description">
-            Develop a web portal for transfering, querying, and analyzing Venmo user data in specified timeframes, 
-            employing Venmo and Google Sheets' API for transactional data.
-          </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">Python</li>
-            <li class="project__stack-item">Django</li>
-            <li class="project__stack-item">HTML</li>
-          </ul>
-          <div> 
-            <a href="https://github.com/j0nnn/Venmo-Integration" aria-label="source code" class="link link--icon">
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a href="https://tasa.berkeley.edu/" aria-label="live preview" class="link link--icon">
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
+      <div class="experience__grid">
+        <div class="experience__card">
+          <div class="experience__image__container">
+            <img style="height: 170px; width: 170px;" src="images/hi-logo.png">
+          </div>
+          <div class="experience__content">
+            <div class="experience__company__info">
+              <div class="experience__title">
+                <h4>Software Engineer Intern</h4>
+                <p class="experience__date">June 2022 - August 2022</p>
+              </div>
+              <p class="experience__company__name">Human Interest</p>
+            </div>
+            <p class="experience__description">
+              • Implemented a chat support feature by integrating the CX Cloud Software into 2 UIs to improve quality of customer service
+            </p>
+            <p class="experience__description">
+              • Granted users access to inclusive genders options by remodeling internal tools and frontend inputs to allow for users to self identify 
+            </p>
+            <p class="experience__description">
+              • Designed a new database schema for self-identifiable genders and migrated 10000+ existing data to fit new gender schema
+            </p>
+            <p class="experience__description">
+              • Designed an interactive balance history chart component that uses GraphQL resolvers to query and calculate user performances given a specified time range, and visualized the data by utilizing VictoryChart library in Typescript 
+            </p>
+            <p class="experience__description">
+              • Increased the integrated test coverage for 5 new features by implementing tests in ChaiJS and Cypress Testing Library
+            </p>
+            <p class="experience__stack">
+              Typescript | GraphQL | NodeJS | PostgreSQL
+            </p>
           </div>
         </div>
-        <div class="project">
-          <h3>ANovaLabs</h3>
-          <p class="project__description">
-            Created a web app that provides the course contents, student notes, and past work for ANova 
-           mentors and mentees to improve accessiblility computer science education in under-resourced communinities.
-          </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">JavaScript</li>
-          </ul>
-          <div> 
-            <a href="https://github.com/ANovaBerkeley/anovalabs" aria-label="source code" class="link link--icon">
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a href="https://www.berkeleyanova.org/" aria-label="live preview" class="link link--icon">
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
+        <div class="experience__card">
+          <div class="experience__image__container">
+            <img style="height: 140px; width: 140px;" src="images/berkeley-engineering-logo.png">
+          </div>
+          <div class="experience__content">
+            <div class="experience__company__info">
+              <div class="experience__title">
+                <h4>Undergraduate Student Instructor</h4>
+                <p class="experience__date">August 2021 - Present</p>
+              </div>
+              <p class="experience__company__name">University of California, Berkeley</p>
+            </div>
+            <p class="experience__description">
+              • Hosted 2 weekly sections for 60+ students in EECS 16A (Designing Information Systems & Devices I) about linear algebra and circuit design.
+            </p>
+            <p class="experience__description">
+              • Led staff meetings to tailor course content to the student demographic by walking through the difficulty of the exams and lab content
+            </p>
+            <p class="experience__description">
+              • Achieved targeted course timeline by devising and grading exam questions, and providing 1000+ students with feedback in a timely fashion
+            </p>
+            <p class="experience__description">
+              • Assisted in lab content development in transitioning from Launchpad to Arduino using Jupyter Notebook and C
+            </p>
+            <p class="experience__stack">
+              Python | LaTeX | Arduino
+            </p>
           </div>
         </div>
-        <div class="project">
-          <h3>Gitlet Version Control System</h3>
-          <p class="project__description">
-            A version-control system that mimics some of the basic features of the popular system Git.
-            Supports functionalities such as add, remove, commit, checkout, branch, merge, etc.
-          </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">Java</li>
-          </ul>
-          <div> 
-            <a href="https://github.com/j0nnn/gitlet" aria-label="source code" class="link link--icon">
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a href="https://sp21.datastructur.es/materials/proj/proj2/proj2" aria-label="live preview" class="link link--icon">
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
+        <div class="experience__card">
+          <div class="experience__image__container">
+            <img style="height: 140px; width: 140px;" src="images/cs61b-logo.png">
+          </div>
+          <div class="experience__content">
+            <div class="experience__company__info">
+              <div class="experience__title">
+                <h4>Academic Intern</h4>
+                <p class="experience__date">June 2021 - August 2021</p>
+              </div>
+              <p class="experience__company__name">University of California, Berkeley</p>
+            </div>
+            <p class="experience__description">
+              • Provided 30+ students with personalized guidance and academic support for daily lab sections in CS61BL (Data Structures)
+            </p>
+            <p class="experience__description">
+              • Taught topics including object-oriented programming, data structures, version control, time complexity, graph traversal, and sorting algorithms
+            </p>
+            <p class="experience__description">
+              • Organized small-group exam review sessions by devising potential exam questions using frequently confounded concepts and past exams
+            </p>
+            <p class="experience__stack">
+              Java
+            </p>
           </div>
         </div>
-      </div>
     </section>
   </main>
 
