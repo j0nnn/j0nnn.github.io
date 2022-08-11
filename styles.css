@@ -132,10 +132,6 @@ button {
   color: var(--clr-hovered-link);
 }
 
-.none {
-  opacity: 0%;
-}
-
 .link::before {
   content: "";
   display: inline;
