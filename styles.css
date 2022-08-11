@@ -35,6 +35,7 @@ body {
   --clr-project-stack: rgb(150, 150, 150);
   --clr-primary: #2978b5;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --darker-shadow: rgba(189, 82, 255, 0.2) 0px 7px 29px 0px;
 }
 
 .dark {
@@ -464,6 +465,11 @@ main {
   width: 25%;
   margin-bottom: 20px;
   border-radius: 10px;
+  cursor: pointer;
+}
+
+.project__card:hover {
+  box-shadow: var(--darker-shadow);
 }
 
 .fade {
