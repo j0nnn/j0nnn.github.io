@@ -35,7 +35,8 @@ body {
   --clr-project-stack: rgb(150, 150, 150);
   --clr-primary: #2978b5;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  --darker-shadow: rgba(189, 82, 255, 0.2) 0px 7px 29px 0px;
+  --darker-shadow--card: rgba(189, 82, 255, 0.2) 0px 7px 29px 0px;
+  --darker-shadow--description: rgba(76, 45, 255, 0.2) 0px 7px 29px 0px;
 }
 
 .dark {
@@ -453,7 +454,23 @@ main {
 }
 
 .project__card {
-  padding: 30px;
+  padding: 30px 30px 0 30px;
+  margin: 0 10px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 300px;
+  width: 25%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.project__description {
+  padding: 15px 30px 30px 30px;
   margin: 0 10px;
   text-align: center;
   box-shadow: var(--shadow);
@@ -469,7 +486,11 @@ main {
 }
 
 .project__card:hover {
-  box-shadow: var(--darker-shadow);
+  box-shadow: var(--darker-shadow--card);
+}
+
+.project__description:hover {
+  box-shadow: var(--darker-shadow--description);
 }
 
 .fade {
@@ -511,7 +532,7 @@ main {
 }
 
 .project__desc {
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .project__links {
