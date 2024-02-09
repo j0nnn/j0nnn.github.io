@@ -8,238 +8,31 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="icon" href="images/logo.png">
+  <link rel="icon" href="images/heart.png">
   <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <title>Jonathan Sun</title>
+  <title>A Question For The Beeb</title>
 </head>
 
 <body class="light" id="top">
-  <header class="header center">
-    <nav class="nav center">
-      <ul class="nav__list center">
-        <li class="nav__list-item">
-          <a class="link link--nav" href="#work">experiences</a>
-        </li>
-        <li class="nav__list-item">
-          <a class="link link--nav" href="#project">projects</a>
-        </li>
-        <li class="nav__list-item">
-          <a class="link link--nav"
-            href="https://drive.google.com/file/d/1mdrzoCSN_LrTZsGFwJBJEgMsRATyhB7F/view?usp=sharing">résumé</a>
-        </li>
-        <li class="nav__list-item">
-          <button type="button" aria-label="toggle theme" class="btn btn--icon">
-            <i id="btn-theme" class="fas fa-moon"></i>
-          </button>
-        </li>
-      </ul>
-      <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
-        <i class="fas fa-bars"></i>
-      </button>
-    </nav>
-  </header>
-
-  <main>
-    <div class="intro">
-      <div class="about center">
-        <h1 id="typewriter"><span id="typewritername" class="about__name"><span></h1>
-        <div class="hidden" id="fadeInDesc">
-          <h2><span class="about__role">EECS student @ UC Berkeley</span></h2>
-          <p><span class="about__desc">An aspiring software engineer based in the Bay, looking for opportunities<br>
-              to expand my knowledge base while fostering a collaborative community!</span></p>
-          <div class="about__contact left">
-            <a href="https://github.com/j0nnn" aria-label="github" class="btn--icon link--icon">
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/jonathan-sun63/" aria-label="linkedin" class="btn--icon link--icon">
-              <i aria-hidden="true" class="fab fa-linkedin"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="imagecontainer">
-        <img class="headshot" src="images/jonathan.jpg" />
-      </div>
+  <div class="container" id="first">
+    <img class="gif" src="https://media.tenor.com/qzfYux1DBlAAAAAi/bear-cute.gif"/>
+    <div class="question">I have a very important question for the Beeb</div>
+    <button class="yes_button" id="yes_button">Okay...</button>
+  </div>
+  <div class="container" id="second">
+    <img class="gif" src="https://media.tenor.com/Ex1pkci_-v8AAAAi/white-cute-cat-hearts.gif"/>
+    <div class="question" id="ask">Would you be my Beeb-len-tines?</div>
+    <div class="button_container">
+      <button class="yes_button2" id="yes_button2">Yes plz!</button>
+      <button class="no_button" id="no_button">I hate U!</button>
     </div>
-    <section id="work" class="section experience">
-      <h2 class="section__title">Work Experience</h2>
-      <div class="experience__grid">
-        <div class="experience__card">
-          <div class="experience__image__container">
-            <img style="height: 170px; width: 170px;" src="images/hi-logo.png">
-          </div>
-          <div class="experience__content">
-            <div class="experience__company__info">
-              <div class="experience__title">
-                <h4>Software Engineer Intern</h4>
-                <p class="experience__date">June 2022 - August 2022</p>
-              </div>
-              <p class="experience__company__name">Human Interest</p>
-            </div>
-            <p class="experience__description">
-              • Implemented a chat support feature by integrating the CX Cloud Software into 2 UIs to improve quality of
-              customer service
-            </p>
-            <p class="experience__description">
-              • Granted users access to inclusive genders options by remodeling internal tools and frontend inputs to
-              allow for users to self identify
-            </p>
-            <p class="experience__description">
-              • Designed a new database schema for self-identifiable genders and migrated 10000+ existing data to fit
-              new gender schema
-            </p>
-            <p class="experience__description">
-              • Designed an interactive balance history chart component that uses GraphQL resolvers to query and
-              calculate user performances given a specified time range, and visualized the data by utilizing
-              VictoryChart library in Typescript
-            </p>
-            <p class="experience__description">
-              • Increased the integrated test coverage for 5 new features by implementing tests in ChaiJS and Cypress
-              Testing Library
-            </p>
-            <p class="stack">
-              Typescript | GraphQL | NodeJS | PostgreSQL
-            </p>
-          </div>
-        </div>
-        <div class="experience__card">
-          <div class="experience__image__container">
-            <img style="height: 140px; width: 140px;" src="images/berkeley-engineering-logo.png">
-          </div>
-          <div class="experience__content">
-            <div class="experience__company__info">
-              <div class="experience__title">
-                <h4>Undergraduate Student Instructor</h4>
-                <p class="experience__date">August 2021 - Present</p>
-              </div>
-              <p class="experience__company__name">University of California, Berkeley</p>
-            </div>
-            <p class="experience__description">
-              • Hosted 2 weekly sections for 60+ students in EECS 16A (Designing Information Systems & Devices I) about
-              linear algebra and circuit design.
-            </p>
-            <p class="experience__description">
-              • Led staff meetings to tailor course content to the student demographic by walking through the difficulty
-              of the exams and lab content
-            </p>
-            <p class="experience__description">
-              • Achieved targeted course timeline by devising and grading exam questions, and providing 1000+ students
-              with feedback in a timely fashion
-            </p>
-            <p class="experience__description">
-              • Assisted in lab content development in transitioning from Launchpad to Arduino using Jupyter Notebook
-              and C
-            </p>
-            <p class="stack">
-              Python | LaTeX | Arduino
-            </p>
-          </div>
-        </div>
-        <div class="experience__card">
-          <div class="experience__image__container">
-            <img style="height: 140px; width: 140px;" src="images/cs61b-logo.png">
-          </div>
-          <div class="experience__content">
-            <div class="experience__company__info">
-              <div class="experience__title">
-                <h4>Academic Intern</h4>
-                <p class="experience__date">June 2021 - August 2021</p>
-              </div>
-              <p class="experience__company__name">University of California, Berkeley</p>
-            </div>
-            <p class="experience__description">
-              • Provided 30+ students with personalized guidance and academic support for daily lab sections in CS61BL
-              (Data Structures)
-            </p>
-            <p class="experience__description">
-              • Taught topics including object-oriented programming, data structures, version control, time complexity,
-              graph traversal, and sorting algorithms
-            </p>
-            <p class="experience__description">
-              • Organized small-group exam review sessions by devising potential exam questions using frequently
-              confounded concepts and past exams
-            </p>
-            <p class="stack">
-              Java
-            </p>
-          </div>
-        </div>
-    </section>
-    <section id="project" class="section">
-      <h2 class="section__title">Personal Projects</h2>
-      <div class="project">
-        <div class="project__card" id="animation__container1">
-          <div>
-            <h4 id="anovalabs">AnovaLabs</h4>
-            <div class="project__content">
-              <img id="project__image" style="height: 140px;" src="images/anova.png" />
-            </div>
-            <i class="fas fa-chevron-down" style="margin-top: 30px;"></i>
-          </div>
-        </div> 
-        <div class="project__description none" id="animation__container2">
-          <i class="fas fa-chevron-up" style="margin-bottom: 10px;"></i>
-          <p class="project__desc">A web-app currently used by 6 under-served school districts in the East Bay. Current provides 100+ students in ANova mentorship programs with access to curated computer science content, and keeps track of attendance, student notes, and past lessons.</p>
-          <a href="https://github.com/ANovaBerkeley/anovalabs" target="_blank" class="btn--icon link--icon">
-            <i class="fab fa-github"></i>
-          </a>
-          <p class="stack">ReactJS | NodeJS | PostgreSQL</p>
-        </div> 
-        <div class="project__card" id="animation__container3">
-          <div>
-            <h4 id="venmo-integration">Venmo-Integration</h4>
-            <div class="project__content">
-              <img id="project__image" style="height: 140px;" src="images/tasa-logo.png" />
-            </div>
-            <i class="fas fa-chevron-down" style="margin-top: 30px;"></i>
-          </div>
-        </div> 
-        <div class="project__description none" id="animation__container4">
-          <i class="fas fa-chevron-up" style="margin-bottom: 10px;"></i>
-          <p class="project__desc">A web-portal for the Taiwanese American Student Association that queries and sorts through Venmo transactional data using Venmo API. Allows for keyword and date range searches that would filter the data. Saved the Treasurer 20+ hours of manual labor.</p>
-          <a href="https://github.com/j0nnn/Venmo-Integration" target="_blank" class="btn--icon link--icon">
-            <i class="fab fa-github"></i>
-          </a>
-          <p class="stack">Python | HTML | CSS | SQLite3</p>
-        </div> 
-        <div class="project__card" id="animation__container5">
-          <div>
-            <h4 id="java-vcs">Java VCS</h4>
-            <div class="project__content">
-              <img id="project__image" style="height: 140px;" src="images/git-logo.svg" />
-            </div>
-            <i class="fas fa-chevron-down" style="margin-top: 30px;"></i>
-          </div>
-        </div>
-        <div class="project__description none" id="animation__container6">
-          <i class="fas fa-chevron-up" style="margin-bottom: 10px;"></i>
-          <p class="project__desc">A version control system similar to that of Git. Implemented commands such as .add, .commit, .branch, .checkout, .merge, etc.. Utilized OOP to keep track of the relationship between commits and files that are tracked. Used hashes to ensure commit uniqueness.</p>
-          <a href="https://github.com/j0nnn/Gitlet" target="_blank" class="btn--icon link--icon">
-            <i class="fab fa-github"></i>
-          </a>
-          <p class="stack">Java</p>
-        </div> 
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <a class="footer__link">
-      Created By Jonathan Sun
-    </a>
-  </footer>
-
-
-  <div class="scroll-container">
-    <div class="scroll-top">
-      <a aria-label="Scroll up" href="#top">
-        <i aria-hidden="true" class="fas fa-arrow-up"></i>
-      </a>
-    </div>
+  </div>
+  <div class="container" id="third">
+    <img class="gif2" src="https://media1.tenor.com/m/J3ZgK7SZ0ScAAAAC/peach-goma-love.gif"/>
+    <div class="question" id="ask">Yay!</div>
   </div>
   <script src="./script.js"></script>
 </body>
-
 </html>

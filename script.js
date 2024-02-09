@@ -1,162 +1,26 @@
-const body = document.body;
-
-const btnTheme = document.querySelector(".fa-moon");
-const btnHamburger = document.querySelector(".fa-bars");
-
-const addThemeClass = (bodyClass, btnClass) => {
-  body.classList.add(bodyClass);
-  btnTheme.classList.add(btnClass);
-};
-
-const getBodyTheme = localStorage.getItem("portfolio-theme");
-const getBtnTheme = localStorage.getItem("portfolio-btn-theme");
-
-addThemeClass(getBodyTheme, getBtnTheme);
-
-const isDark = () => body.classList.contains("dark");
-
-const setTheme = (bodyClass, btnClass) => {
-  body.classList.remove(localStorage.getItem("portfolio-theme"));
-  btnTheme.classList.remove(localStorage.getItem("portfolio-btn-theme"));
-
-  addThemeClass(bodyClass, btnClass);
-
-  localStorage.setItem("portfolio-theme", bodyClass);
-  localStorage.setItem("portfolio-btn-theme", btnClass);
-};
-
-const toggleTheme = () =>
-  isDark() ? setTheme("light", "fa-moon") : setTheme("dark", "fa-sun");
-
-btnTheme.addEventListener("click", toggleTheme);
-
-const displayList = () => {
-  const navUl = document.querySelector(".nav__list");
-
-  if (btnHamburger.classList.contains("fa-bars")) {
-    btnHamburger.classList.remove("fa-bars");
-    btnHamburger.classList.add("fa-times");
-    navUl.classList.add("display-nav-list");
-  } else {
-    btnHamburger.classList.remove("fa-times");
-    btnHamburger.classList.add("fa-bars");
-    navUl.classList.remove("display-nav-list");
-  }
-};
-
-btnHamburger.addEventListener("click", displayList);
-
-const scrollUp = () => {
-  const btnScrollTop = document.querySelector(".scroll-top");
-
-  if (body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-    btnScrollTop.style.display = "block";
-  } else {
-    btnScrollTop.style.display = "none";
-  }
-};
-
-document.addEventListener("scroll", scrollUp);
-
-window.onload = function () {
-  type(
-    "Hi, I'm ",
-    0,
-    "typewriter",
-    80,
-    fadeIn,
-    type,
-    "Jonathan",
-    0,
-    "typewritername",
-    220
-  );
-};
-function type(word, i, elementId, delay, callback, ...args) {
-  if (i < word.length) {
-    document.getElementById(elementId).innerHTML =
-      word.substring(0, i + 1) +
-      document.getElementById(elementId).innerHTML.substring(i);
-    i++;
-    setTimeout(
-      type,
-      Math.floor(Math.random() * 50 + delay - 25),
-      word,
-      i,
-      elementId,
-      delay,
-      callback,
-      ...args
-    );
-  } else if (callback) {
-    callback(...args);
-  }
-}
-
-function fadeIn(callback, ...args) {
-  document.getElementById("fadeInDesc").className = "about__labels";
-  callback(...args);
-}
-
-const project1 = document.getElementById("animation__container1");
-const project1_description = document.getElementById("animation__container2");
-
-function appear(project, description) {
-	project.classList.add("none");
-	description.classList.remove("none");
-	description.classList.add("hidden");
-	description.classList.remove("fade-out");
-	description.classList.add("fade");
-	description.classList.remove("hidden");
-}
-
-function appear2(project, description) {
-	description.classList.add("none");
-	project.classList.remove("none");
-	project.classList.add("hidden");
-	project.classList.remove("fade-out");
-	project.classList.add("fade");
-	project.classList.remove("hidden");
-}
-
-project1.addEventListener("click", () => {
-  project1.classList.remove("fade");
-  project1.classList.add("fade-out");
-  setTimeout(appear, 500, project1, project1_description);
+const yes_button = document.getElementById("yes_button");
+yes_button.addEventListener("click", () => {
+  document.getElementById("first").style.display  = 'none';
+  document.getElementById("second").style.display  = 'flex';
 });
 
-project1_description.addEventListener("click", () => {
-  project1_description.classList.remove("fade");
-  project1_description.classList.add("fade-out");
-  setTimeout(appear2, 500, project1, project1_description);
-});
+const yes_button2 = document.getElementById("yes_button2");
+yes_button2.addEventListener("click", () => {
+  document.getElementById("second").style.display = 'none';
+  document.getElementById("third").style.display = 'flex';
+})
 
-const project2 = document.getElementById("animation__container3");
-const project2_description = document.getElementById("animation__container4");
-
-project2.addEventListener("click", () => {
-	project2.classList.remove("fade");
-	project2.classList.add("fade-out");
-	setTimeout(appear, 500, project2, project2_description);
-  });
-  
-  project2_description.addEventListener("click", () => {
-	project2_description.classList.remove("fade");
-	project2_description.classList.add("fade-out");
-	setTimeout(appear2, 500, project2, project2_description);
-  });
-
-  const project3 = document.getElementById("animation__container5");
-  const project3_description = document.getElementById("animation__container6");
-  
-  project3.addEventListener("click", () => {
-	  project3.classList.remove("fade");
-	  project3.classList.add("fade-out");
-	  setTimeout(appear, 500, project3, project3_description);
-	});
-	
-	project3_description.addEventListener("click", () => {
-	  project3_description.classList.remove("fade");
-	  project3_description.classList.add("fade-out");
-	  setTimeout(appear2, 500, project3, project3_description);
-	});
+const no_button = document.getElementById("no_button");
+const ask = document.getElementById("ask");
+const colors = ["red", "orange", "yellow", "green", "blue", "purple", "pink"];
+no_button.addEventListener("click", () => {
+  if (ask.innerText == "Would you be my Beeb-len-tines?") {
+    ask.innerText = "Please";
+    ask.style.fontSize = "16px";
+  } else {
+    let added = parseInt(ask.style.fontSize.slice(0,-2)) + 1;
+    console.log(added.toString() + 'px');
+    ask.style.fontSize = added.toString() + 'px';
+    ask.style.color = colors[Math.floor(Math.random() * 7)]
+  }
+})

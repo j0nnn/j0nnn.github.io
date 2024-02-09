@@ -13,6 +13,7 @@
   font-size: inherit;
   box-shadow: none;
   box-sizing: border-box;
+  align-items: center;
 }
 
 html {
@@ -558,4 +559,75 @@ main {
   background-color: transparent;
   font-size: 1.8rem;
   transition: transform 0.2s ease-in-out;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20%;
+}
+
+.question {
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.gif {
+  width: 130px;
+  height: 130px;
+}
+
+.gif2 {
+  width: 200px;
+  height: 200px;
+}
+
+.yes_button {
+  margin-top: 20px;
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 20%;
+  background-color: green;
+  color: white;
+}
+
+.yes_button:hover {
+  background-color: darkgreen;
+}
+
+.first {
+  display: flex;
+}
+
+#second {
+  display: none;
+}
+
+#third {
+  display: none;
+}
+
+.button_container {
+  display: flex;
+  flex-direction: row;
+}
+
+.yes_button2 {
+  margin-top: 20px;
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 20%;
+  background-color: green;
+  color: white;
+}
+
+.no_button {
+  margin-top: 20px;
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 20%;
+  background-color: red;
+  color: white;
+  margin-left: 10px;
 }
